@@ -1,9 +1,11 @@
 [![Build Status](http://ec2-52-43-46-166.us-west-2.compute.amazonaws.com:8080/job/Hello_Jenkins/badge/icon?.png)](http://ec2-52-43-46-166.us-west-2.compute.amazonaws.com:8080/job/Hello_Jenkins/)
 
 ##Hello_Jenkins
+![Jenkins Overview](jbankes.github.com/Hello_Jenkins/img/jenkins_overview)
 This simple exercise is designed to introduce you to Jenkins and continuous
 integration. This will be done in teams of 5 but we will all be working on one
 Jenkins server.
+
 
 ###Overview
 1. Fork the Repo.
@@ -17,6 +19,7 @@ To clone a repository using some Mac/Linux create run
 _$ git clone https://github.com/<your_Github_username>/Hello_Jenkins_
 
 ####Setting up a Job in Jenkins
+
 
 
 ####Set up _Embedded Build Status_ for Repo
