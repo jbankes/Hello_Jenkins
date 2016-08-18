@@ -1,4 +1,4 @@
-[![Build Status](http://ec2-52-43-46-166.us-west-2.compute.amazonaws.com:8080/job/Hello_Jenkins/badge/icon)](http://ec2-52-43-46-166.us-west-2.compute.amazonaws.com:8080/job/Hello_Jenkins/)
+[![Build Status](http://jenkins.chico.liatr.io:8080/buildStatus/icon?job=Hello_Jenkins)](http://jenkins.chico.liatr.io:8080/job/Hello_Jenkins/)
 
 ##Hello_Jenkins
 This simple exercise is designed to introduce you to Jenkins and continuous
@@ -13,11 +13,23 @@ Jenkins server.
 4. Set up second job to run the program after build completes.
 
 ####Forking the repository
-Someone on your team should hopefully has a Github account. Sign in to Github and navigate to www.github.com/jbankes/Hello_Jenkins. Go ahead and fork this repository and clone it to a computer.
-To clone a repository using some Mac/Linux create run
+Someone on your team hopefully has a Github account. Sign in to Github and navigate to www.github.com/jbankes/Hello_Jenkins. Go ahead and fork this repository and clone it to a computer.
+To clone a repository using a Mac/Linux run
 ```
 $ git clone https://github.com/<your_Github_username>/Hello_Jenkins
 ```
+
+After you have cloned the code to a computer please open the README.md file in
+a text editor. Please put the full names of your group members at the top of
+the README. Commit the change and push back to Github. From inside the directory
+run:
+```
+$ git add README.md
+$ git commit -m "Updated README with Names"
+$ git push
+```
+_If there is an error or you can't see your commit in Github after refreshing
+then let me know._
 
 ####Setting up a Job in Jenkins
 1. Navtigate to [Jenkins](http://ec2-52-43-46-166.us-west-2.compute.amazonaws.com:8080).
@@ -73,4 +85,7 @@ not have a git repository - it doesn't even build anything.
 ###Wrapping it up
 As you can see, Jenkins has a ton of opportunity which makes it the leading CI
 tool for modern enterprise and software development. Jobs don't have to be
- explicitly build jobs which mean you can do other incredible things like deployments, promotions, testing, feedback, and much more. 
+ explicitly build jobs which mean you can do other incredible things like deployments, promotions, testing, feedback, and much more.
+
+###Turn in Your Project
+Please submit the URL of your Github fork to _x01 Intro to Jenkins_.  
