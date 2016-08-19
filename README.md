@@ -1,4 +1,4 @@
-[![Build Status](http://jenkins.chico.liatr.io:8080/buildStatus/icon?job=Hello_Jenkins)](http://jenkins.chico.liatr.io:8080/job/Hello_Jenkins/)
+[![Build Status](http://jenkins.chico.liatr.io:8080/job/Hello_Jenkins/badge/icon)](http://jenkins.chico.liatr.io:8080/job/Hello_Jenkins/)
 
 ##Hello_Jenkins
 This simple exercise is designed to introduce you to Jenkins and continuous
@@ -64,6 +64,11 @@ Because we selected _With View_ you will be able to click the build status icon 
 The final step to this demo is to set up a second job that automatically runs
 after the project builds. This is different than the other job because this will
 not have a git repository - it doesn't even build anything.
+
+_Just a note: In a real-life scenario you wouldn't run a program through a
+build job just like this because I/O is not possible via this console. There
+are other tools people use at this step like SeleniumHQ, SonarQube, or a
+Deployment. The point of this is to show downstream/upstream job relationships._
 
 1. Create a new Job in Jenkins
   1. Click _New Item_.
