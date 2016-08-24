@@ -1,5 +1,3 @@
-[![Build Status](http://jenkins.chico.liatr.io:8080/job/Hello_Jenkins/badge/icon)](http://jenkins.chico.liatr.io:8080/job/Hello_Jenkins/)
-
 ##Hello_Jenkins
 This simple exercise is designed to introduce you to Jenkins and continuous
 integration. This will be done in teams of 5 but we will all be working on one
@@ -7,9 +5,9 @@ Jenkins server.
 
 
 ###Overview
-1. Fork the Repo.
-2. Set up Job in Jenkins to connect to your repository and build c++ Hello_World.
-3. Set up build status symbol.
+1. Fork the repo.
+2. Set up job in Jenkins to connect to your repository and build C++ hell.cpp.
+3. Set up build status badge.
 4. Set up second job to run the program after build completes.
 
 ####Forking the repository
@@ -20,9 +18,9 @@ $ git clone https://github.com/<your_Github_username>/Hello_Jenkins
 ```
 
 After you have cloned the code to a computer please open the README.md file in
-a text editor. Please put the full names of your group members at the top of
-the README. Commit the change and push back to Github. From inside the directory
-run:
+a text editor. Please put the full names of all group members at the top of
+the README. Commit the change and push back to Github. Run the following from
+inside the directory after adding the names to the README:
 ```
 $ git add README.md
 $ git commit -m "Updated README with Names"
@@ -32,7 +30,9 @@ _If there is an error or you can't see your commit in Github after refreshing
 then let me know._
 
 ####Setting up a Job in Jenkins
-1. Navtigate to [Jenkins](http://ec2-52-43-46-166.us-west-2.compute.amazonaws.com:8080).
+![Jenkins Landing Page](/img/jenkins_landing.png)
+
+1. Navtigate to [Jenkins](jenkins.chico.liatr.io).
 2. Click _New Item_.
 3. Enter a name for your project, click _Freestyle Project_, then _OK_.
 4. Set up _Source Code Management_.
@@ -47,10 +47,13 @@ then let me know._
 7. Click _Save_.
 
 ####Set up _Embedded Build Status_ for Repo
+![Build status badge](/img/jenkins_badge.png)
+
 The build status symbol often seen on a Github repository is normally connected
 to TravisCI or JenkinsCI. We are using JenkinsCI which requires a plugin called
-_Embedded Build Status_. I have already installed if for you. You just need to
-add the proper information into you README.md file.
+_Embedded Build Status_. I have already installed it for you. You just need to
+add the proper information into your README.md file.
+
 
 1. Open the README file in a text editor.
 2. Go to the _Embedded Build Status_ page. The link is found on the main page of the job.
@@ -79,13 +82,13 @@ Deployment. The point of this is to show downstream/upstream job relationships._
 2. Set your first job to call the second
   1. Go to your first job and open the _Configure_ page.
   2. Scroll to bottom and add a Post-Build Action. Select _Build other projects_.
-  3. Enter your first job.
+  3. Enter the name of your second job.
   4. Save
 3. Run your first job
   1. After that successfully builds go and check your second job.
   2. You should see it successfully run.
   3. Select a Build Job from History and go to the console log to see your program output. If you program has run there then you successfully set up a basic pipeline.
-
+![Job history](/img/jenkins_history.png)
 
 ###Wrapping it up
 As you can see, Jenkins has a ton of opportunity which makes it the leading CI
@@ -93,4 +96,7 @@ tool for modern enterprise and software development. Jobs don't have to be
  explicitly build jobs which mean you can do other incredible things like deployments, promotions, testing, feedback, and much more.
 
 ###Turn in Your Project
-Please submit the URL of your Github fork to _x01 Intro to Jenkins_.  
+Please submit the URL of your group's Github fork to _x01 Intro to Jenkins_ on
+Blackboard.
+
+###Thank You  
