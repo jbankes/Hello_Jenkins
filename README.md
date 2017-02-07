@@ -1,5 +1,3 @@
-[![Build Status](http://jenkins.chico.liatr.io/job/Hello-Jenkins-Justin/badge/icon)](http://jenkins.chico.liatr.io/job/Hello-Jenkins-Justin/)
-
 ##Hello_Jenkins <img align="right" src="img/liatrio.png">
 This simple exercise is designed to introduce you to Jenkins and continuous
 integration. This will be done in teams of 5 but we will all be working on one
@@ -102,5 +100,5 @@ Please submit the URL of your group's Github fork to _x01 Intro to Jenkins_ on
 Blackboard.
 
 ###Thank You  
-Justin Bankes <justin@liatrio.com>
+Justin Bankes <justin@liatrio.com>  
 Shane MacBride <shanem@liatrio.com>
