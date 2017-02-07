@@ -1,4 +1,6 @@
-##Hello_Jenkins
+[![Build Status](http://jenkins.chico.liatr.io/job/Hello-Jenkins-Justin/badge/icon)](http://jenkins.chico.liatr.io/job/Hello-Jenkins-Justin/)
+
+##Hello_Jenkins <img align="right" src="img/liatrio.png">
 This simple exercise is designed to introduce you to Jenkins and continuous
 integration. This will be done in teams of 5 but we will all be working on one
 Jenkins server.
@@ -56,7 +58,7 @@ add the proper information into your README.md file.
 
 
 1. Open the README file in a text editor.
-2. Go to the _Embedded Build Status_ page. The link is found on the main page of the job.
+2. Go to the _Embeddable Build Status_ page. The link is found on the main page of the job.
 3. Select the _Markdown (with View) protected_ link and paste it in your README.
 4. Commit your README changes and push to Github.
 5. The change should automatically cause the job to build and after you can go to Github and check your repo. You should see the build status there
@@ -100,3 +102,5 @@ Please submit the URL of your group's Github fork to _x01 Intro to Jenkins_ on
 Blackboard.
 
 ###Thank You  
+Justin Bankes <justin@liatrio.com>
+Shane MacBride <shanem@liatrio.com>
