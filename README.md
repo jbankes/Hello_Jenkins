@@ -6,7 +6,7 @@ Jenkins server.
 
 ###Overview
 1. Fork the repo.
-2. Set up job in Jenkins to connect to your repository and build C++ hell.cpp.
+2. Set up job in Jenkins to connect to your repository and build C++ hello.cpp.
 3. Set up build status badge.
 4. Set up second job to run the program after build completes.
 
@@ -35,6 +35,8 @@ then let me know._
 1. Navtigate to [Jenkins](jenkins.chico.liatr.io).
 2. Click _New Item_.
 3. Enter a name for your project, click _Freestyle Project_, then _OK_.
+  1. _Note_: Please do not include a space. 
+  2. Name this something unique so there are no collisions. 
 4. Set up _Source Code Management_.
   1. Select _git_.
   2. Enter the URL to your git repository
@@ -46,12 +48,12 @@ then let me know._
   2. Enter `make` (This will run the Makefile).
 7. Click _Save_.
 
-####Set up _Embedded Build Status_ for Repo
+####Set up _Embeddable Build Status_ for Repo
 ![Build status badge](/img/jenkins_badge.png)
 
 The build status symbol often seen on a Github repository is normally connected
 to TravisCI or JenkinsCI. We are using JenkinsCI which requires a plugin called
-_Embedded Build Status_. I have already installed it for you. You just need to
+_Embeddable Build Status_. I have already installed it for you. You just need to
 add the proper information into your README.md file.
 
 
@@ -85,9 +87,10 @@ Deployment. The point of this is to show downstream/upstream job relationships._
   3. Enter the name of your second job.
   4. Save
 3. Run your first job
-  1. After that successfully builds go and check your second job.
-  2. You should see it successfully run.
-  3. Select a Build Job from History and go to the console log to see your program output. If you program has run there then you successfully set up a basic pipeline.
+  1. Do this by clicking `build now` on the main page.
+  2. After that successfully builds go and check your second job.
+  3. You should see it successfully run.
+  4. Select a Build Job from History and go to the console log to see your program output. If you program has run there then you successfully set up a basic pipeline.
 ![Job history](/img/jenkins_history.png)
 
 ###Wrapping it up
