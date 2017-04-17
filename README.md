@@ -1,16 +1,16 @@
-##Hello_Jenkins <img align="right" src="img/liatrio.png">
+## Hello_Jenkins <img align="right" src="img/liatrio.png">
 This simple exercise is designed to introduce you to Jenkins and continuous
 integration. This will be done in teams of 5 but we will all be working on one
 Jenkins server.
 
 
-###Overview
+### Overview
 1. Fork the repo.
 2. Set up job in Jenkins to connect to your repository and build C++ hello.cpp.
 3. Set up build status badge.
 4. Set up second job to run the program after build completes.
 
-####Forking the repository
+#### Forking the repository
 Someone on your team hopefully has a Github account. Sign in to Github and navigate to www.github.com/jbankes/Hello_Jenkins. Go ahead and fork this repository and clone it to a computer.
 To clone a repository using a Mac/Linux run
 ```
@@ -29,14 +29,14 @@ $ git push
 _If there is an error or you can't see your commit in Github after refreshing
 then let me know._
 
-####Setting up a Job in Jenkins
+#### Setting up a Job in Jenkins
 ![Jenkins Landing Page](/img/jenkins_landing.png)
 
 1. Navtigate to [Jenkins](jenkins.chico.liatr.io).
 2. Click _New Item_.
 3. Enter a name for your project, click _Freestyle Project_, then _OK_.
-  1. _Note_: Please do not include a space. 
-  2. Name this something unique so there are no collisions. 
+  1. _Note_: Please do not include a space.
+  2. Name this something unique so there are no collisions.
 4. Set up _Source Code Management_.
   1. Select _git_.
   2. Enter the URL to your git repository
@@ -48,7 +48,7 @@ then let me know._
   2. Enter `make` (This will run the Makefile).
 7. Click _Save_.
 
-####Set up _Embeddable Build Status_ for Repo
+#### Set up _Embeddable Build Status_ for Repo
 ![Build status badge](/img/jenkins_badge.png)
 
 The build status symbol often seen on a Github repository is normally connected
@@ -65,7 +65,7 @@ add the proper information into your README.md file.
 
 Because we selected _With View_ you will be able to click the build status icon which will take you to the Job in Jenkins.
 
-####Set up Second Job to Run the Compiled Program
+#### Set up Second Job to Run the Compiled Program
 The final step to this demo is to set up a second job that automatically runs
 after the project builds. This is different than the other job because this will
 not have a git repository - it doesn't even build anything.
@@ -93,15 +93,15 @@ Deployment. The point of this is to show downstream/upstream job relationships._
   4. Select a Build Job from History and go to the console log to see your program output. If you program has run there then you successfully set up a basic pipeline.
 ![Job history](/img/jenkins_history.png)
 
-###Wrapping it up
+### Wrapping it up
 As you can see, Jenkins has a ton of opportunity which makes it the leading CI
 tool for modern enterprise and software development. Jobs don't have to be
  explicitly build jobs which mean you can do other incredible things like deployments, promotions, testing, feedback, and much more.
 
-###Turn in Your Project
+### Turn in Your Project
 Please submit the URL of your group's Github fork to _x01 Intro to Jenkins_ on
 Blackboard.
 
-###Thank You  
+### Thank You  
 Justin Bankes <justin@liatrio.com>  
 Shane MacBride <shanem@liatrio.com>
