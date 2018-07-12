@@ -1,8 +1,7 @@
 ## Hello_Jenkins <img align="right" src="img/liatrio.png">
-This simple exercise is designed to introduce you to Jenkins and continuous
-integration. This will be done in teams of 5 but we will all be working on one
-Jenkins server.
-
+This simple exercise is designed to introduce you to Jenkins and continuous integration. This was originally written
+as an exercise for California State University, Chico. I have since modified it to be a simple exercise for anyone
+to use. 
 
 ### Overview
 1. Fork the repo.
@@ -10,29 +9,18 @@ Jenkins server.
 3. Set up build status badge.
 4. Set up second job to run the program after build completes.
 
-#### Forking the repository
-Someone on your team hopefully has a Github account. Sign in to Github and navigate to www.github.com/jbankes/Hello_Jenkins. Go ahead and fork this repository and clone it to a computer.
-To clone a repository using a Mac/Linux run
-```
-$ git clone https://github.com/<your_Github_username>/Hello_Jenkins
-```
+#### Prerequisites
+A Jenkins server is needed in order to complete the exercise. One option is local virtualization using 
+[Docker](https://hub.docker.com/r/jenkins/jenkins/) or a virtual machine. Another is installing Jenkins on a cloud 
+platform like AWS. A t2.micro would be more than enough for this particular exercise. 
 
-After you have cloned the code to a computer please open the README.md file in
-a text editor. Please put the full names of all group members at the top of
-the README. Commit the change and push back to Github. Run the following from
-inside the directory after adding the names to the README:
-```
-$ git add README.md
-$ git commit -m "Updated README with Names"
-$ git push
-```
-_If there is an error or you can't see your commit in Github after refreshing
-then let me know._
+You should fork this repository and set up to run on your own. This will allow you to change and experiment to your
+heart's desire. 
 
 #### Setting up a Job in Jenkins
 ![Jenkins Landing Page](/img/jenkins_landing.png)
 
-1. Navtigate to [Jenkins](jenkins.chico.liatr.io).
+1. Navtigate to Jenkins server. 
 2. Click _New Item_.
 3. Enter a name for your project, click _Freestyle Project_, then _OK_.
   1. _Note_: Please do not include a space.
@@ -41,12 +29,15 @@ then let me know._
   1. Select _git_.
   2. Enter the URL to your git repository
 5. Setting up _Build Triggers_
-  1. Select _Poll SCM_.
+  1. Select _Poll SCM_. 
   2. Set up cron job by putting in `H/2 * * * *`.
 6. Set up _Build_.
   1. Add build step _Execute Shell_.
   2. Enter `make` (This will run the Makefile).
 7. Click _Save_.
+
+If you want a bit more of a challenge consider setting up Webhooks as opposed to polling. A fun Jenkins exercise that 
+can get you thinking. 
 
 #### Set up _Embeddable Build Status_ for Repo
 ![Build status badge](/img/jenkins_badge.png)
@@ -55,7 +46,6 @@ The build status symbol often seen on a Github repository is normally connected
 to TravisCI or JenkinsCI. We are using JenkinsCI which requires a plugin called
 _Embeddable Build Status_. I have already installed it for you. You just need to
 add the proper information into your README.md file.
-
 
 1. Open the README file in a text editor.
 2. Go to the _Embeddable Build Status_ page. The link is found on the main page of the job.
@@ -94,14 +84,9 @@ Deployment. The point of this is to show downstream/upstream job relationships._
 ![Job history](/img/jenkins_history.png)
 
 ### Wrapping it up
-As you can see, Jenkins has a ton of opportunity which makes it the leading CI
-tool for modern enterprise and software development. Jobs don't have to be
- explicitly build jobs which mean you can do other incredible things like deployments, promotions, testing, feedback, and much more.
-
-### Turn in Your Project
-Please submit the URL of your group's Github fork to _x01 Intro to Jenkins_ on
-Blackboard.
+As you can see, Jenkins has a ton of opportunity which makes it the leading CI tool for modern enterprise and software 
+development. Jobs don't have to be explicitly build jobs which mean you can do other tasks like deployments, promotions,
+testing, feedback, and much more.
 
 ### Thank You  
 Justin Bankes <justin@liatrio.com>  
-Shane MacBride <shanem@liatrio.com>

@@ -2,8 +2,7 @@
 #include <iostream>
 using namespace std;
 
-int main(void)
-{
+int main(void) {
   cout << "Hello, World\n";
   cout << "Hello, Jenkins\n";
 
