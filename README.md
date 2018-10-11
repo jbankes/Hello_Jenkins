@@ -77,7 +77,7 @@ Deployment. The point of this is to show downstream/upstream job relationships._
   3. Enter the name of your second job.
   4. Save
 3. Run your first job
-  1. Do this by clicking `build now` on the main page.
+  1. Do this by clicking `build now` on the main page window.
   2. After that successfully builds go and check your second job.
   3. You should see it successfully run.
   4. Select a Build Job from History and go to the console log to see your program output. If you program has run there then you successfully set up a basic pipeline.
