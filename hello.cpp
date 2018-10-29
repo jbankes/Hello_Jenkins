@@ -1,11 +1,9 @@
 //File: hello.cpp
 #include <iostream>
 using namespace std;
-
-int main(void) {
-  cout << "Hello, World\n";
-  cout << "Hello, Jenkins\n";
-
-  cout << "I have successfully built and run\n";
+int main() {
+  cout << "HELLO WORLD"<<endl;
+  cout << "HELLO JENKINS"<<endl;
+  cout << "I HAVE SUCCESSFULLY BUILT AND RUN"<<endl;
   return 0;
 }
