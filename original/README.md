@@ -18,7 +18,7 @@ You should fork this repository and set up to run on your own. This will allow y
 heart's desire. 
 
 #### Setting up a Job in Jenkins
-![Jenkins Landing Page](/img/jenkins_landing.png)
+![Jenkins Landing Page](img/jenkins_landing.png)
 
 1. Navtigate to Jenkins server. 
 2. Click _New Item_.
@@ -40,7 +40,7 @@ If you want a bit more of a challenge consider setting up Webhooks as opposed to
 can get you thinking. 
 
 #### Set up _Embeddable Build Status_ for Repo
-![Build status badge](/img/jenkins_badge.png)
+![Build status badge](img/jenkins_badge.png)
 
 The build status symbol often seen on a Github repository is normally connected
 to TravisCI or JenkinsCI. We are using JenkinsCI which requires a plugin called
@@ -81,7 +81,7 @@ Deployment. The point of this is to show downstream/upstream job relationships._
   2. After that successfully builds go and check your second job.
   3. You should see it successfully run.
   4. Select a Build Job from History and go to the console log to see your program output. If you program has run there then you successfully set up a basic pipeline.
-![Job history](/img/jenkins_history.png)
+![Job history](img/jenkins_history.png)
 
 ### Wrapping it up
 As you can see, Jenkins has a ton of opportunity which makes it the leading CI tool for modern enterprise and software 
