@@ -1,3 +1,4 @@
+[![Build Status](http://23.96.122.58/job/hello_jenkins/badge/icon)](http://23.96.122.58/job/hello_jenkins/)
 ## Hello_Jenkins <img align="right" src="img/liatrio.png">
 This simple exercise is designed to introduce you to Jenkins and continuous integration. This was originally written
 as an exercise for California State University, Chico. I have since modified it to be a simple exercise for anyone
@@ -20,7 +21,7 @@ heart's desire.
 #### Setting up a Job in Jenkins
 ![Jenkins Landing Page](img/jenkins_landing.png)
 
-1. Navtigate to Jenkins server. 
+1. Navigate to Jenkins server. 
 2. Click _New Item_.
 3. Enter a name for your project, click _Freestyle Project_, then _OK_.
   1. _Note_: Please do not include a space.
@@ -33,7 +34,7 @@ heart's desire.
   2. Set up cron job by putting in `H/2 * * * *`.
 6. Set up _Build_.
   1. Add build step _Execute Shell_.
-  2. Enter `make` (This will run the Makefile).
+  2. Enter `cd original` and `make` (This will change to the directory where the Makefile is and then run it).
 7. Click _Save_.
 
 If you want a bit more of a challenge consider setting up Webhooks as opposed to polling. A fun Jenkins exercise that 
