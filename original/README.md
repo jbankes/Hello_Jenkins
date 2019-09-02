@@ -90,3 +90,5 @@ testing, feedback, and much more.
 
 ### Thank You  
 Justin Bankes <justin@liatrio.com>  
+
+[![Build Status](http://23.96.122.58/job/hello_jenkins/5/badge/icon)](http://23.96.122.58/job/hello_jenkins/5/)
