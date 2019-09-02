@@ -33,7 +33,7 @@ heart's desire.
   2. Set up cron job by putting in `H/2 * * * *`.
 6. Set up _Build_.
   1. Add build step _Execute Shell_.
-  2. Enter `make` (This will run the Makefile).
+  2. Enter `cd original` and `make` (This will change to the directory where the Makefile is and then run it).
 7. Click _Save_.
 
 If you want a bit more of a challenge consider setting up Webhooks as opposed to polling. A fun Jenkins exercise that 
