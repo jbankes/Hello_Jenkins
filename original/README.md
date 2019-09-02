@@ -21,7 +21,7 @@ heart's desire.
 #### Setting up a Job in Jenkins
 ![Jenkins Landing Page](img/jenkins_landing.png)
 
-1. Navtigate to Jenkins server. 
+1. Navigate to Jenkins server. 
 2. Click _New Item_.
 3. Enter a name for your project, click _Freestyle Project_, then _OK_.
   1. _Note_: Please do not include a space.
