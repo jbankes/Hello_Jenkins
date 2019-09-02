@@ -1,3 +1,4 @@
+[![Build Status](http://23.96.122.58/job/hello_jenkins/5/badge/icon)](http://23.96.122.58/job/hello_jenkins/5/)
 ## Hello_Jenkins <img align="right" src="img/liatrio.png">
 This simple exercise is designed to introduce you to Jenkins and continuous integration. This was originally written
 as an exercise for California State University, Chico. I have since modified it to be a simple exercise for anyone
@@ -90,5 +91,3 @@ testing, feedback, and much more.
 
 ### Thank You  
 Justin Bankes <justin@liatrio.com>  
-
-[![Build Status](http://23.96.122.58/job/hello_jenkins/5/badge/icon)](http://23.96.122.58/job/hello_jenkins/5/)
